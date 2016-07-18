@@ -35,7 +35,7 @@ We have 2 controllers in the project
 
 - Install MongoDb in the system.
 
-- Download the Emulator-Sensor program from [I'm an inline-style link] https://github.com/egen/sensor-emulator and import it into Eclipse as Existing Maven Project. Right Click on the project Run As --> Maven clean and then Run As --> Maven install. A .jar with name sensor-emulator-0.0.1-SNAPSHOT.jar will be generated inside the target folder.
+- Download the Emulator-Sensor program from https://github.com/egen/sensor-emulator and import it into Eclipse as Existing Maven Project. Right Click on the project Run As --> Maven clean and then Run As --> Maven install. A .jar with name sensor-emulator-0.0.1-SNAPSHOT.jar will be generated inside the target folder.
 
 - Download the project as .zip from github and extract it. Import it into Eclipse as Existing Maven Project. Right Click on the project Run As --> Maven clean and then Run As --> Maven install. A .jar with name WeightMonitor-0.0.1-SNAPSHOT.jar will be created inside the target folder.
 
@@ -47,7 +47,7 @@ We have 2 controllers in the project
   
 - Open another Command prompt and navigate to the target folder of Emulator-Sensor project and use the following command
 
- > java -jar -Dbase.value=150 -Dapi.url=http://localhost:8080/metricsHandler/createMetrics    sensor-emulator-0.0.1-SNAPSHOT.jar
+ > java -jar -Dbase.value=150 -Dapi.url=http://localhost:8080/metrics/create sensor-emulator-0.0.1-SNAPSHOT.jar
  
  Here the -Dbase.value can be set to any value, it will be taken as the base weight value.
  
