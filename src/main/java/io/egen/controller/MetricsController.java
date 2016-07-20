@@ -16,14 +16,14 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import io.egen.entity.Metrics;
 import io.egen.exception.MetricsException;
-import io.egen.repository.MetricsRepositoryImp;
+import io.egen.repository.MetricsRepository;
 
 @RestController
 @RequestMapping(value = "/metrics")
 public final class MetricsController {
 
 	@Autowired
-	private MetricsRepositoryImp metricsRepository;
+	private MetricsRepository metricsRepository;
 
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
 	@ExceptionHandler(MetricsException.class)

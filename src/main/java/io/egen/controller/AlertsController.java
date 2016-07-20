@@ -12,7 +12,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import io.egen.entity.Alerts;
 import io.egen.exception.AlertsException;
-import io.egen.repository.AlertsRepositoryImp;
+import io.egen.repository.AlertsRepository;
 
 
 @RestController
@@ -20,7 +20,7 @@ import io.egen.repository.AlertsRepositoryImp;
 public final class AlertsController {
 
 	@Autowired
-	private AlertsRepositoryImp alertsRepository ; 
+	private AlertsRepository alertsRepository ; 
 
 	@RequestMapping(value = "/readAlerts", method = RequestMethod.GET)
 	@ExceptionHandler(AlertsException.class)
